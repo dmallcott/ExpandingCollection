@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="text_size_title">26sp</dimen>
+    <dimen name="text_size_subtitle">22sp</dimen>
+    <dimen name="half_default_margin">8dp</dimen>
+    <dimen name="default_card_elevation">5dp</dimen>
+    <dimen name="text_size_number">20sp</dimen>
+</resources>

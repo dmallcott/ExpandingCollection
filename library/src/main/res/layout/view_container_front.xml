@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="@dimen/default_card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dmallcott.expanding_collection.library.SquareImageView
+            android:id="@+id/view_container_front_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/london"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_container_front_image"
+            android:background="@drawable/dark_background_gradient_bottom_top"
+            android:padding="@dimen/default_margin">
+
+            <TextView
+                android:id="@+id/view_container_front_lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/view_container_front_icon"
+                android:layout_toStartOf="@+id/view_container_front_icon"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_subtitle"
+                tools:text="LAT N 51°"/>
+
+            <ImageView
+                android:id="@+id/view_container_front_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/half_default_margin"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_place"/>
+
+            <TextView
+                android:id="@+id/view_container_front_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/view_container_front_icon"
+                android:layout_toRightOf="@+id/view_container_front_icon"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_subtitle"
+                tools:text="LNG W 0.1°"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/view_container_front_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view_container_front_image"
+            android:background="@drawable/dark_background_gradient_top_bottom"
+            android:gravity="center"
+            android:padding="@dimen/default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_title"
+            tools:text="London"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
